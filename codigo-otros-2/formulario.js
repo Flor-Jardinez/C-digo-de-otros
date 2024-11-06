@@ -2,14 +2,14 @@ var formulario = document.querySelector("#form")
 
 formulario.onsubmit = function(e) {
 
-  e.preventDefault();
+  e.preventDefault(); // Se cambió 'e.prevent()' a 'e.preventDefault()
   
   var n = formulario.elements[0]
-  var edadInput = formulario.elements[1]
+  var edadInput = formulario.elements[1] //se cambio e por edadInput
   var na = formulario.elements[2]
 
   var nombre = n.value
-  var edad = edadInput.value
+  var edad = edadInput.value //se modificoó e.value por edadInput
 
   var i = na.selectedIndex
   var nacionalidad = na.options[i].value
@@ -53,7 +53,7 @@ function agregarInvitado(nombre, edad, nacionalidad) {
 var lista = document.getElementById("lista-de-invitados")
 
 var elementoLista = document.createElement("div")
-elementoLista.classList.add("elemento-lista")
+elementoLista.classList.add("elemento-lista") //Se cambió 'added' a 'add'
 lista.appendChild(elementoLista)
 
 var spanNombre = document.createElement("span")
